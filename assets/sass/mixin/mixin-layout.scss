@@ -1,0 +1,38 @@
+@mixin box-size($name:"body", $type:"content-box") {
+    #{$name} {
+        box-sizing: $type;
+    }
+}
+
+
+/* initialisation divers */
+
+.float-right {
+    float: right !important;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    height: 33vh;
+    padding-top: 30px;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.fas,
+.fa-user {
+    padding: 0;
+    margin: 0;
+}

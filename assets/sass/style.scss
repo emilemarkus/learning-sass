@@ -1,0 +1,106 @@
+/* initialisation */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* theme */
+
+
+/* importation de mixin couleur */
+
+@import "mixin/mixin-color.scss";
+@import "mixin/mixin-component.scss";
+.nav-link {
+    color: $light-color !important;
+    &:hover {
+        color: $warning-color !important;
+    }
+}
+
+
+/*  TYPOGRAPHIE */
+
+@import "mixin/mixin-text.scss";
+@include initialise-text("body", "Roboto", 1.2em, 1.5em);
+@include makeButton("button");
+
+/**********************************************************************************************************************************************/
+
+
+/* composant */
+
+
+/*************************************************************************************************************************************************/
+
+@include horizontal-menu("#navigateur", 100vw, 8vh, flex-start);
+@include jumbotron(".jumbotron", 43vh, center);
+.jumbotron img {
+    padding: 10vw;
+}
+
+@include bannerDivider(".banner-divider", 10vh, center);
+@include tablePanel("#table-panel", 2, $light-color, $primary-color);
+@include sponsorLogo("#sponsor-logo", $light-color);
+
+/***********************************************************************************************************************************/
+
+
+/*****     L A Y O U T    **********************************************************************************************************/
+
+
+/************************************************************************************************************************************/
+
+@import "mixin/mixin-layout.scss";
+@include box-size("content-box");
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8.5vh;
+    background-color: #333333;
+    color: #fff;
+    li {
+        float: left;
+        list-style: none;
+    }
+    a {
+        padding: 0 20px;
+        border-right: 2px dotted #dddddd;
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+    }
+}
+
+#navigateur li:last-of-type a {
+    padding-left: 5px;
+}
+
+footer li:last-of-type {
+    float: right !important;
+}
+
+
+/* on top*/
+
+div.onTop {
+    height: 60px;
+    width: 60px;
+    content: " ";
+    white-space: pre;
+    background: url('../img/notification.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    &:hover {
+        filter: saturate(1200%);
+        -webkit-filter: saturate(1200%);
+    }
+}

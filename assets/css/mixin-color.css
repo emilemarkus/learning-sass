@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* création des class color-text et liens */
+.text-warning {
+  color: #E99002;
+}
+
+.text-warning-darker a.text-warning:focus, .text-warning-darker a.text-warning:hover {
+  color: #382300;
+}
+
+.text-warning-darker a.text-warning:visited {
+  color: #fd9e08;
+}
+
+.text-primary {
+  color: #1E93CC;
+}
+
+.text-primary-darker a.text-primary:focus, .text-primary-darker a.text-primary:hover {
+  color: #072330;
+}
+
+.text-primary-darker a.text-primary:visited {
+  color: #25a2df;
+}
+
+.text-dark {
+  color: #333333;
+}
+
+.text-dark-darker a.text-dark:focus, .text-dark-darker a.text-dark:hover {
+  color: black;
+}
+
+.text-dark-darker a.text-dark:visited {
+  color: #404040;
+}
+
+.text-secondary {
+  color: #333333;
+}
+
+.text-secondary-darker a.text-secondary:focus, .text-secondary-darker a.text-secondary:hover {
+  color: black;
+}
+
+.text-secondary-darker a.text-secondary:visited {
+  color: #404040;
+}
+
+/* créations des class background */
+.bg-primary {
+  background-color: #1E93CC;
+}
+
+.bg-warning {
+  background-color: #E99002;
+}
+
+.bg-dark {
+  background-color: #333333;
+}
+
+.bg-secondary {
+  background-color: #165882;
+}
+
+.border-1-light {
+  border: 1px solid #EEEEEE;
+}
+
+.border-2-light {
+  border: 2px solid #EEEEEE;
+}
+
+.border-3-light {
+  border: 3px solid #EEEEEE;
+}
+
+.fas,
+.fa-user {
+  color: #EEEEEE;
+}

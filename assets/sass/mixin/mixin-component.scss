@@ -1,0 +1,125 @@
+/* création du menu horizontal */
+
+@mixin horizontal-menu ($name:"#navigateur", $largeur:100vw, $hauteur:8vh, $position:"flex-start") {
+    #{$name} {
+        overflow: hidden;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: $largeur;
+        height: $hauteur;
+        ul {
+            width: 100%;
+            padding: 0 5vw 0 10vw;
+            list-style: none;
+        }
+        .nav-items {
+            float: left;
+        }
+        a {
+            padding-left: 30px;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+    }
+}
+
+@mixin jumbotron($name:".jumbotron", $hauteur:40vh, $align:center) {
+    #{$name} {
+        max-width: 100vw;
+        height: $hauteur;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: $align;
+        line-height: 3em;
+        background-color: $primary-color;
+        color: $light-color;
+        text-align: center;
+        h1 {
+            font-size: 4em;
+        }
+        h3 {
+            font-weight: 300;
+            font-size: 2em;
+        }
+    }
+}
+
+@mixin bannerDivider($name:".banner-divider", $hauteur:10vh, $align:center) {
+    #{$name} {
+        overflow-x: hidden;
+        max-width: 100%;
+        min-height: $hauteur;
+        display: flex;
+        align-items: $align;
+        justify-content: $align;
+        font-size: 1.7em;
+        font-weight: 300;
+    }
+}
+
+@mixin tablePanel ($name:"#table-panel", $col:2, $color:$primary-color, $bgcolor:$light-color) {
+    #{$name} {
+        overflow: hidden;
+        max-width: 98%;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        color: $color;
+        background-color: $bgcolor;
+        padding: 2em 2em;
+        .table-panel-item {
+            width: (70/$col)*1%;
+            margin: 30px 20px;
+            hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            -webkit-hyphens: none;
+        }
+        h3 {
+            font-size: 1.8em;
+            font-weight: 300;
+            padding-bottom: 0.7em;
+            color: $light-color;
+        }
+        h3::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f054";
+            padding-right: 5px;
+        }
+        p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@mixin sponsorLogo ($name:"#sponsor-logo", $bgcolor:$light-color, ) {
+    #{$name} {
+        width: 100%;
+        min-height: 31vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: $bgcolor;
+        .sponsor-container {
+            width: 80%;
+            text-align: center;
+        }
+        img {
+            max-width: 6vw;
+            height: auto;
+            margin: 10px 50px;
+            vertical-align: middle;
+        }
+        img:last-of-type {
+            max-width: 11vw;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+$primary-color: #1E93CC;
+$secondary-color:#165882;
+$dark-color: #333333;
+$light-color: #EEEEEE;
+$warning-color: #E99002;
+@mixin text-color-class ($name:".text-primary", $color:$primary-color) {
+    #{$name} {
+        color: $color;
+    }
+    #{$name}-darker a#{$name} {
+        &:focus,
+        &:hover {
+            color: darken($color, 35%);
+        }
+        &:visited {
+            color: lighten($color, 5%)
+        }
+    }
+}
+
+@mixin bg-color-class ($name:".bg-primary", $color: $primary-color) {
+    #{$name} {
+        background-color: $color;
+    }
+}
+
+
+/* création des class color-text et liens */
+
+@include text-color-class(".text-warning", $warning-color);
+@include text-color-class(".text-primary", $primary-color);
+@include text-color-class(".text-dark", $dark-color);
+@include text-color-class(".text-secondary", $dark-color);
+
+/* créations des class background */
+
+@include bg-color-class(".bg-primary", $primary-color);
+@include bg-color-class(".bg-warning", $warning-color);
+@include bg-color-class(".bg-dark", $dark-color);
+@include bg-color-class(".bg-secondary", $secondary-color);
+.border-1-light {
+    border: 1px solid $light-color;
+}
+
+.border-2-light {
+    border: 2px solid $light-color;
+}
+
+.border-3-light {
+    border: 3px solid $light-color;
+}
+
+.fas,
+.fa-user {
+    color: $light-color;
+}

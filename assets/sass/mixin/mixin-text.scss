@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@mixin initialise-text ($name:"body",
+$family:"Arial",
+$font-size:0.8em,
+$line-height:1.5em) {
+    #{$name} {
+        font-family: $family;
+        font-size: $font-size;
+        line-height: $line-height;
+    }
+}
+
+.font-light {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+@mixin makeButton($name:"button") {
+    #{$name} {
+        margin-top: 15px;
+        width: 210px;
+        height: 65px;
+        border: 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-size: 1em;
+        color: #fff;
+        &:hover {
+            filter: saturate(500%);
+            -webkit-filter: saturate(500%);
+        }
+    }
+}
