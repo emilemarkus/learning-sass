@@ -1,0 +1,17 @@
+@mixin testBg() {
+    .bg-test1 {
+        background-color: rgb(207, 94, 94);
+    }
+    .bg-test2 {
+        background-color: rgb(94, 166, 207);
+    }
+    .bg-test3 {
+        background-color: rgb(94, 207, 119);
+    }
+    .bg-test4 {
+        background-color: rgb(207, 94, 201);
+    }
+    .bg-test5 {
+        background-color: rgb(207, 205, 94);
+    }
+}

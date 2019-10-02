@@ -1,0 +1,107 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+#bloc_page {
+  width: 100vw;
+}
+
+#bloc_page header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bloc_page header #logo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bloc_page header nav ul {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+#bloc_page section {
+  padding-left: 1em;
+  padding-right: 0.5em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bloc_page section h1 {
+  font-size: 1em;
+}
+
+#bloc_page #banniere_image {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border: 0;
+  border-radius: 0px !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+#bloc_page #banniere_image img {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+#bloc_page #banniere_image #banniere_description {
+  border-radius: 0;
+  height: 50px;
+  top: 70%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+#bloc_page .bouton_rouge {
+  text-align: center;
+}
+
+footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer #tweet,
+footer #mes_photos,
+footer #mes_amis,
+footer #mes_amis {
+  width: 90vw;
+}

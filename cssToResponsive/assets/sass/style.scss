@@ -1,0 +1,8 @@
+@import "_color";
+@import "_typo";
+@import "_layout";
+@import "mixins/mixin-test";
+
+/* inclusion des bg test */
+
+@include testBg();

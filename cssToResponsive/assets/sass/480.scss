@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+#bloc_page {
+    width: 100vw;
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #logo {
+            flex-direction: column;
+            align-items: center;
+        }
+        nav ul {
+            font-size: 1em;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    section {
+        padding-left: 1em;
+        padding-right: 0.5em;
+        flex-direction: column;
+        h1 {
+            font-size: 1em;
+        }
+    }
+    #banniere_image {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        #banniere_description {
+            border-radius: 0;
+            height: 50px;
+            top: 71%;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+    }
+    .bouton_rouge {
+        text-align: center;
+    }
+}
+
+aside {
+    flex-direction: row;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    #tweet,
+    #mes_photos,
+    #mes_amis,
+    #mes_amis {
+        width: 90vw;
+    }
+}

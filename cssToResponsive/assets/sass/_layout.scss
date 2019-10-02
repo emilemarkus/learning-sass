@@ -1,0 +1,171 @@
+#bloc_page {
+    width: 900px;
+    margin: auto;
+}
+
+header,
+#titre_principal,
+#logo,
+section,
+footer,
+#listes_amis,
+nav ul {
+    display: flex;
+}
+
+header,
+#listes_amis {
+    justify-content: space-between;
+}
+
+#photo_zozor img,
+#mes_photos img {
+    border: 1px solid #181818;
+}
+
+.bouton_rouge,
+nav a:hover {
+    border: 1px solid #760001;
+}
+
+#titre_principal {
+    flex-direction: column;
+}
+
+#logo {
+    flex-direction: row;
+}
+
+header {
+    align-items: flex-end;
+}
+
+header h1,
+header h2 {
+    margin-top: 0px;
+}
+
+#banniere_description,
+.bouton_rouge,
+#fleche_bulle {
+    position: absolute;
+}
+
+#banniere_image,
+aside {
+    position: relative;
+}
+
+#banniere_image,
+aside,
+.bouton_rouge {
+    border-radius: 5px;
+}
+
+#logo {
+    align-items: baseline;
+}
+
+#logo img {
+    width: 59px;
+    height: 60px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    padding-bottom: 3px;
+}
+
+#banniere_image {
+    margin-top: 15px;
+    height: 200px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banniere_description {
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+}
+
+.bouton_rouge {
+    height: 25px;
+    right: 5px;
+    bottom: 5px;
+    padding: 3px 8px 0px 8px;
+}
+
+.bouton_rouge img {
+    border: 0;
+}
+
+
+/* Corps */
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    margin-right: 20px;
+    flex: 3;
+}
+
+.ico_categorie {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+aside {
+    flex: 1.2;
+    box-shadow: 0px 2px 5px #1c1a19;
+    padding: 10px;
+}
+
+#fleche_bulle {
+    top: 100px;
+    left: -12px;
+}
+
+aside img {
+    margin-right: 5px;
+}
+
+footer {
+    padding-top: 25px;
+}
+
+#tweet {
+    width: 28%;
+}
+
+#mes_photos {
+    width: 35%;
+}
+
+#mes_amis {
+    width: 31%;
+}
+
+#mes_photos img {
+    margin-right: 2px;
+}
+
+#listes_amis {
+    margin-top: 0;
+}
+
+#mes_amis ul {
+    padding-left: 2px;
+}

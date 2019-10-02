@@ -1,0 +1,43 @@
+body {
+    background: url('../../images/fond_jaune.png');
+}
+
+header {
+    background: url('../assets/images/separateur.png') repeat-x bottom;
+}
+
+#banniere_image {
+    background: url('../../assets/images/sanfrancisco.jpg') no-repeat;
+}
+
+.bouton_rouge {
+    background: url('../../assets/images/fond_degraderouge.png') repeat-x;
+}
+
+footer {
+    background: url('../../assets/images/ico_top.png') no-repeat top center, url('../../assets/images/separateur.png') repeat-x top, url('../../assets/images/ombre.png') repeat-x top;
+}
+
+body,
+nav a {
+    color: #181818;
+}
+
+nav a:hover,
+#mes_amis a {
+    color: #760001;
+}
+
+aside,
+.bouton_rouge,
+#banniere_description {
+    color: white;
+}
+
+#banniere_description {
+    background-color: rgba(24, 24, 24, 0.8);
+}
+
+aside {
+    background-color: #706b64;
+}
